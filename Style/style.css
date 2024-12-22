@@ -1,0 +1,49 @@
+@layer reset , base;
+@import url(./section/nav.css);
+@import url(./section/home.css);
+@import url(./section/client.css);
+@import url(./section/about_us.css);
+@import url(./section/why_us.css);
+@import url(./section/skill.css);
+@import url(./section/service.css);
+@import url(./section/call_to_action.css);
+@import url(./section/portfolio.css);
+@import url(./section/pricing.css);
+@import url(./section/contact.css);
+@layer reset {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-size: 16px; */
+  }
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}
+@layer base {
+  :root {
+    --primary-color: #37517e;
+    --secondary-color: #47b2e4;
+    --light-color: #ffffff;
+    --text-color: #8b8b8b;
+    --heading-font: 'Jost', sans-serif;
+    --nav-font: 'Poppins', sans-serif;
+    --default-color: #f5f6f8;
+  }
+  body {
+    /* position: relative; */
+    /* display: grid; */
+    font-family: var(--heading-font);
+    color: var(--text-color);
+    /* grid-template-columns: 100px 1fr 100px; */
+    > * {
+      padding-inline: 7rem;
+      background-color: var(--light-color);
+      @media screen and (width<600px) {
+        padding-inline: 1rem;
+      }
+    }
+  }
+}

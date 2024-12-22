@@ -1,0 +1,16 @@
+.client {
+  display: flex;
+  justify-content: center;
+  gap: 6rem;
+  overflow-x: auto;
+  align-items: center;
+  padding-block: 1.5rem;
+  background-color: var(--default-color);
+  /* padding-inline: 2rem; */
+  div {
+    width: 100px;
+    img {
+      width: 6rem;
+    }
+  }
+}

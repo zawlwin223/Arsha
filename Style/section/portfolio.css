@@ -1,0 +1,69 @@
+.portfolio {
+  padding-block: 3rem;
+  header {
+    h2 {
+      text-align: center;
+      text-transform: uppercase;
+      color: var(--primary-color);
+      position: relative;
+      &::before {
+        content: '';
+        position: absolute;
+        display: block;
+        bottom: -10px;
+        width: 160px;
+        height: 1px;
+        left: 0;
+        right: 0;
+        background-color: var(--text-color);
+        margin: auto;
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        display: block;
+        bottom: -11px;
+        width: 70px;
+        height: 3px;
+        left: 0px;
+        right: 0px;
+        background-color: var(--secondary-color);
+        margin: auto;
+      }
+    }
+    p {
+      margin-top: 2rem;
+      text-align: center;
+    }
+  }
+  .scroll_bar {
+    display: flex;
+    /* margin: auto; */
+    margin-top: 3rem;
+    justify-content: center;
+    gap: 2rem;
+    cursor: pointer;
+  }
+  .active {
+    background-color: var(--secondary-color);
+    color: #ffff;
+    border-radius: 50px;
+    padding: 0.2rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .gallery {
+    columns: 3;
+    margin-top: 1rem;
+    img {
+      /* display: none; */
+      display: block;
+      width: 100%;
+      /* break-inside: avoid; */
+    }
+    @media screen and (width<1000px) {
+      columns: 2;
+    }
+  }
+}

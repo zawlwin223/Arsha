@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap-icons/font/bootstrap-icons.css" />
+
+    <title>Vite App</title>
+  </head>
+  <body>
+    <nav>
+      <div class="overlay"></div>
+      <div class="nav">
+        <h1>Arsha</h1>
+        <ul class="nav__links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about_us">About</a></li>
+          <li><a href="#service">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li class="get_started"><button>Get Started</button></li>
+          <li class="menu"><p>☰</p></li>
+        </ul>
+      </div>
+    </nav>
+    <section id="home" class="home">
+      <section class="home__article">
+        <h1>Better Solutions For Your Business</h1>
+        <p>We are team of talented designers making websites with Bootstrap</p>
+        <div class="home__button">
+          <button>Get Started</button>
+          <button>Watch Video</button>
+        </div>
+      </section>
+      <section class="home__img">
+        <img src="./assets/img/hero-img.png" alt="" />
+      </section>
+    </section>
+    <section id="client" class="client">
+      <div>
+        <img src="./assets/img/clients/client-1.png" alt="" />
+      </div>
+      <div>
+        <img src="./assets/img/clients/client-2.png" alt="" />
+      </div>
+      <div>
+        <img src="./assets/img/clients/client-3.png" alt="" />
+      </div>
+      <div>
+        <img src="./assets/img/clients/client-4.png" alt="" />
+      </div>
+      <div>
+        <img src="./assets/img/clients/client-5.png" alt="" />
+      </div>
+      <div>
+        <img src="./assets/img/clients/client-6.png" alt="" />
+      </div>
+    </section>
+    <section id="about_us" class="about_us">
+      <h1>About Us</h1>
+      <div>
+        <article>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <ul>
+            <li>
+              <i class="bi bi-check2-circle"></i>Ullamco laboris nisi ut aliquip
+              ex ea commodo consequat
+            </li>
+            <li>
+              <i class="bi bi-check2-circle"></i>Duis aute irure dolor in
+              reprehenderit in voluptate velit.
+            </li>
+            <li>
+              <i class="bi bi-check2-circle"></i>Ullamco laboris nisi ut aliquip
+              ex ea commodo
+            </li>
+          </ul>
+        </article>
+        <article>
+          <p>
+            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+            irure dolor in reprehenderit in voluptate velit esse cillum dolore
+            eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est
+            laborum.
+          </p>
+          <button>Read More<i class="bi bi-arrow-right"></i></button>
+        </article>
+      </div>
+    </section>
+    <section id="why_us" class="why_us">
+      <article>
+        <h2>
+          Eum ipsam laborum deleniti
+          <strong> velit pariatur architecto aut nihil </strong>
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute
+          irure dolor in reprehenderit
+        </p>
+        <ul>
+          <li>
+            <h4>
+              <span>01</span> Non consectetur a erat nam at lectus urna duis?
+            </h4>
+          </li>
+          <li>
+            <h4>
+              <span>02</span> Non consectetur a erat nam at lectus urna duis?
+            </h4>
+          </li>
+          <li>
+            <h4>
+              <span>03</span> Non consectetur a erat nam at lectus urna duis?
+            </h4>
+          </li>
+        </ul>
+      </article>
+      <div>
+        <img src="./assets/img/why-us.png" alt="" />
+      </div>
+    </section>
+    <section id="skill" class="skill">
+      <article>
+        <h2>Voluptatem dignissimos provident quasi corporis voluptas</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <ul>
+          <li>
+            <label for="file"><span>Html</span><span>100%</span></label>
+            <progress id="file" value="100" max="100">32%</progress>
+          </li>
+
+          <li>
+            <label for="file"><span>Css</span><span>90%</span></label>
+            <progress id="file" value="90" max="100">32%</progress>
+          </li>
+
+          <li>
+            <label for="file"><span>Javascript</span><span>80%</span></label>
+            <progress id="file" value="80" max="100">32%</progress>
+          </li>
+
+          <li>
+            <label for="file"><span>React</span><span>70%</span></label>
+            <progress id="file" value="70" max="100">32%</progress>
+          </li>
+        </ul>
+      </article>
+      <div>
+        <img src="./assets/img/skills.png" alt="" />
+      </div>
+    </section>
+    <section id="service" class="service">
+      <header>
+        <h2>Services</h2>
+        <p>
+          Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+          consectetur velit
+        </p>
+      </header>
+      <main>
+        <div>
+          <i class="bi bi-activity icon"></i>
+          <h3>Lorem Ipsum</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem
+            aspernatur
+          </p>
+        </div>
+
+        <div>
+          <i class="bi bi-bounding-box-circles icon"></i>
+          <h3>Lorem Ipsum</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem
+            aspernatur
+          </p>
+        </div>
+        <div>
+          <i class="bi bi-calendar4-week icon"></i>
+          <h3>Lorem Ipsum</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem
+            aspernatur
+          </p>
+        </div>
+        <div>
+          <i class="bi bi-broadcast icon"></i>
+          <h3>Lorem Ipsum</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem
+            aspernatur
+          </p>
+        </div>
+      </main>
+    </section>
+    <section id="call_to_action" class="call_to_action">
+      <article>
+        <h2>Call To Action</h2>
+        <p>
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est
+          laborum.
+        </p>
+      </article>
+      <div>
+        <button>Call To Action</button>
+      </div>
+      <img src="./assets/img/cta-bg.jpg" alt="" />
+      <div class="call_to_action__overlay"></div>
+    </section>
+    <section id="portfolio" class="portfolio">
+      <header>
+        <h2>Portfolio</h2>
+        <p>
+          Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+          consectetur velit
+        </p>
+      </header>
+      <div class="scroll_bar">
+        <p data-type="all" class="active">All</p>
+        <p data-type="app">App</p>
+        <p data-type="card">Card</p>
+        <p data-type="web">Web</p>
+      </div>
+      <main class="gallery">
+        <img
+          data-type="app"
+          src="./assets/img/masonry-portfolio/masonry-portfolio-1.jpg"
+          alt="" />
+
+        <img
+          data-type="web"
+          src="./assets/img/masonry-portfolio/masonry-portfolio-2.jpg"
+          alt="" />
+        <img
+          data-type="card"
+          src="./assets/img/masonry-portfolio/masonry-portfolio-3.jpg"
+          alt="" />
+        <img
+          data-type="app"
+          src="./assets/img/masonry-portfolio/masonry-portfolio-4.jpg"
+          alt="" />
+        <img
+          data-type="web"
+          src="./assets/img/masonry-portfolio/masonry-portfolio-5.jpg"
+          alt="" />
+        <img
+          data-type="card"
+          src="./assets/img/masonry-portfolio/masonry-portfolio-6.jpg"
+          alt="" />
+        <img
+          data-type="app"
+          src="./assets/img/masonry-portfolio/masonry-portfolio-7.jpg"
+          alt="" />
+        <img
+          data-type="web"
+          src="./assets/img/masonry-portfolio/masonry-portfolio-8.jpg"
+          alt="" />
+        <img
+          data-type="card"
+          src="./assets/img/masonry-portfolio/masonry-portfolio-9.jpg"
+          alt="" />
+      </main>
+    </section>
+    <section id="pricing" class="pricing">
+      <header>
+        <h2>Pricing</h2>
+        <p>
+          Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+          consectetur velit
+        </p>
+      </header>
+      <main>
+        <div>
+          <p>Free Plan</p>
+          <h4><sup>$</sup>0<span>/month</span></h4>
+          <ul>
+            <li>Quam adipiscing vitae proin</li>
+            <li>Nec feugiat nisl pretium</li>
+            <li>Nulla at volutpat diam uteera</li>
+            <li><strike>Nulla at volutpat diam uteera</strike></li>
+            <li><strike>Nulla at volutpat diam uteera</strike></li>
+          </ul>
+          <button>Buy Now</button>
+        </div>
+        <div class="active">
+          <p>Free Plan</p>
+          <h4><sup>$</sup>24<span>/month</span></h4>
+          <ul>
+            <li>Quam adipiscing vitae proin</li>
+            <li>Nec feugiat nisl pretium</li>
+            <li>Nulla at volutpat diam uteera</li>
+            <li>Nulla at volutpat diam uteera</li>
+            <li>Nulla at volutpat diam uteera</li>
+          </ul>
+          <button>Buy Now</button>
+        </div>
+        <div>
+          <p>Free Plan</p>
+          <h4><sup>$</sup>0<span>/month</span></h4>
+          <ul>
+            <li>Quam adipiscing vitae proin</li>
+            <li>Nec feugiat nisl pretium</li>
+            <li>Nulla at volutpat diam uteera</li>
+            <li>Nulla at volutpat diam uteera</li>
+            <li>Nulla at volutpat diam uteera</li>
+          </ul>
+          <button>Buy Now</button>
+        </div>
+      </main>
+    </section>
+    <section id="contact" class="contact">
+      <header>
+        <h2>Contact</h2>
+        <p>
+          Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+          consectetur velit
+        </p>
+      </header>
+      <main>
+        <address class="contact__detail">
+          <ul>
+            <li>
+              <img src="" alt="" />
+              <div>
+                <h4>Address</h4>
+                <p>A108 Adam Street, New York, NY 535022</p>
+              </div>
+            </li>
+            <li>
+              <img src="" alt="" />
+              <div>
+                <h4>Address</h4>
+                <p>A108 Adam Street, New York, NY 535022</p>
+              </div>
+            </li>
+            <li>
+              <img src="" alt="" />
+              <div>
+                <h4>Address</h4>
+                <p>A108 Adam Street, New York, NY 535022</p>
+              </div>
+            </li>
+          </ul>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d122209.47897915643!2d95.9473677!3d16.8240631!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m5!1s0x30c1bf1c49ac518d%3A0xf20029d58b338b3a!2zV2VzdCBZYW5nb24gVGVjaG5vbG9naWNhbCBVbml2ZXJzaXR5IChXWVRVKSDhgJvhgJThgLrhgIDhgK_hgJThgLrhgKHhgJThgLHhgKzhgIDhgLrhgJXhgK3hgK_hgIThgLrhgLjhgJThgIrhgLrhgLjhgJXhgIrhgKzhgJDhgIDhgLnhgIDhgJ7hgK3hgK_hgJzhgLogKFdZVFUp!3m2!1d16.869070999999998!2d96.00842109999999!4m0!5e0!3m2!1sen!2smm!4v1727149931456!5m2!1sen!2smm"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </address>
+        <form class="contact_form">
+          <div class="contact_form_divide">
+            <div>
+              <label for="">Your Name</label>
+              <input type="text" />
+            </div>
+
+            <div>
+              <label for="">Your Email</label>
+              <input type="text" />
+            </div>
+          </div>
+
+          <div>
+            <label for="">Subject</label>
+            <input type="text" />
+          </div>
+
+          <div>
+            <label for="">Message</label>
+            <textarea name="" id=""></textarea>
+          </div>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </main>
+    </section>
+  </body>
+  <script src="./Js/app.js"></script>
+</html>

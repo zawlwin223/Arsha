@@ -1,0 +1,79 @@
+.skill {
+  padding-block: 4rem;
+  display: flex;
+  flex-direction: row-reverse;
+  article {
+    flex: 1;
+    h2 {
+      color: var(--primary-color);
+      font-size: 2rem;
+    }
+    p {
+      font-style: italic;
+      margin-block: 0.5rem;
+    }
+    ul {
+      li {
+        margin-top: 1.5rem;
+        display: flex;
+        list-style: none;
+        flex-wrap: wrap;
+        label {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          text-transform: uppercase;
+          font-weight: 500;
+          color: #444444;
+        }
+        progress {
+          margin-top: 0.5rem;
+          width: 100%;
+          height: 0.8rem;
+          border-radius: 5px;
+          animation: progressBar 1.5s ease-in-out;
+          animation-iteration-count: infinite;
+          animation-fill-mode: both;
+          &::-webkit-progress-bar {
+            background-color: #fdfdfd;
+          }
+          &::-webkit-progress-value {
+            background-color: var(--primary-color);
+            animation: progressBar 1.5s ease-in-out;
+            animation-iteration-count: infinite;
+            animation-fill-mode: both;
+          }
+        }
+      }
+    }
+  }
+  div {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    img {
+      width: 90%;
+    }
+  }
+  @media screen and (width<1000px) {
+    flex-direction: column-reverse;
+    & > article {
+      margin-top: 3rem;
+    }
+  }
+  @keyframes progressBar {
+    0% {
+      left: 0;
+      width: 0;
+    }
+    50% {
+      left: 0;
+      width: 100%;
+    }
+    100% {
+      left: 100%;
+      width: 0;
+    }
+  }
+}
